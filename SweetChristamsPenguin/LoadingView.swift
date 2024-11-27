@@ -51,6 +51,7 @@ struct LoadingView: View {
             }
             .padding()
         }
+        .fixlibhjesde()
     }
 }
 extension Color {
