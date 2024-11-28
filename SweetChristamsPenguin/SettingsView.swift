@@ -19,20 +19,20 @@ struct SettingsView: View {
                 .overlay {
                     
                     VStack {
-                        Button {
-                            if let url = URL(string: "mailto:barneydwuystrjb325@gmail.com") {
-                                if UIApplication.shared.canOpenURL(url) {
-                                    UIApplication.shared.open(url)
-                                }
-                            }
-                        } label: {
-                            Image("btnSet")
-                               .overlay {
-                                   Text("Contact Us")
-                                       .font(.custom(jeju, size: 25))
-                                       .foregroundStyle(.black)
-                               }
-                        }
+//                        Button {
+//                            if let url = URL(string: "mailto:barneydwuystrjb325@gmail.com") {
+//                                if UIApplication.shared.canOpenURL(url) {
+//                                    UIApplication.shared.open(url)
+//                                }
+//                            }
+//                        } label: {
+//                            Image("btnSet")
+//                               .overlay {
+//                                   Text("Contact Us")
+//                                       .font(.custom(jeju, size: 25))
+//                                       .foregroundStyle(.black)
+//                               }
+//                        }
 
                        
                         Button {
