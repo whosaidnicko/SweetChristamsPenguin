@@ -6,11 +6,52 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F49DF2C52D09BB3300167AA4 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = F49DF2C42D09BB3300167AA4 /* AppsFlyerLib */; };
+		F49DF2C82D09BB7100167AA4 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F49DF2C72D09BB7100167AA4 /* OneSignalExtension */; };
+		F49DF2CA2D09BB7100167AA4 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = F49DF2C92D09BB7100167AA4 /* OneSignalFramework */; };
+		F49DF2CC2D09BB7100167AA4 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = F49DF2CB2D09BB7100167AA4 /* OneSignalInAppMessages */; };
+		F49DF2CE2D09BB7100167AA4 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = F49DF2CD2D09BB7100167AA4 /* OneSignalLocation */; };
+		F49DF2DA2D09C2A900167AA4 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F49DF2D32D09C2A900167AA4 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F49DF2D82D09C2A900167AA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4ADBCBB2CF66F86002C197D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49DF2D22D09C2A900167AA4;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F49DF2DF2D09C2A900167AA4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F49DF2DA2D09C2A900167AA4 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F49DF2D32D09C2A900167AA4 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4ADBCC32CF66F86002C197D /* SweetChristamsPenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetChristamsPenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F49DF2DE2D09C2A900167AA4 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F49DF2D22D09C2A900167AA4 /* OneSignalNotificationServiceExtension */;
+		};
 		F4ADBCEA2CF67877002C197D /* Exceptions for "SweetChristamsPenguin" folder in "SweetChristamsPenguin" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -21,6 +62,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F49DF2D42D09C2A900167AA4 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F49DF2DE2D09C2A900167AA4 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		F4ADBCC52CF66F86002C197D /* SweetChristamsPenguin */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,10 +81,22 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F49DF2D02D09C2A900167AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4ADBCC02CF66F86002C197D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49DF2C52D09BB3300167AA4 /* AppsFlyerLib in Frameworks */,
+				F49DF2CE2D09BB7100167AA4 /* OneSignalLocation in Frameworks */,
+				F49DF2CA2D09BB7100167AA4 /* OneSignalFramework in Frameworks */,
+				F49DF2CC2D09BB7100167AA4 /* OneSignalInAppMessages in Frameworks */,
+				F49DF2C82D09BB7100167AA4 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F4ADBCC52CF66F86002C197D /* SweetChristamsPenguin */,
+				F49DF2D42D09C2A900167AA4 /* OneSignalNotificationServiceExtension */,
 				F4ADBCC42CF66F86002C197D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F4ADBCC32CF66F86002C197D /* SweetChristamsPenguin.app */,
+				F49DF2D32D09C2A900167AA4 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +124,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F49DF2D22D09C2A900167AA4 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49DF2DB2D09C2A900167AA4 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				F49DF2CF2D09C2A900167AA4 /* Sources */,
+				F49DF2D02D09C2A900167AA4 /* Frameworks */,
+				F49DF2D12D09C2A900167AA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F49DF2D42D09C2A900167AA4 /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = F49DF2D32D09C2A900167AA4 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F4ADBCC22CF66F86002C197D /* SweetChristamsPenguin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4ADBCD22CF66F89002C197D /* Build configuration list for PBXNativeTarget "SweetChristamsPenguin" */;
@@ -68,16 +153,23 @@
 				F4ADBCBF2CF66F86002C197D /* Sources */,
 				F4ADBCC02CF66F86002C197D /* Frameworks */,
 				F4ADBCC12CF66F86002C197D /* Resources */,
+				F49DF2DF2D09C2A900167AA4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F49DF2D92D09C2A900167AA4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F4ADBCC52CF66F86002C197D /* SweetChristamsPenguin */,
 			);
 			name = SweetChristamsPenguin;
 			packageProductDependencies = (
+				F49DF2C42D09BB3300167AA4 /* AppsFlyerLib */,
+				F49DF2C72D09BB7100167AA4 /* OneSignalExtension */,
+				F49DF2C92D09BB7100167AA4 /* OneSignalFramework */,
+				F49DF2CB2D09BB7100167AA4 /* OneSignalInAppMessages */,
+				F49DF2CD2D09BB7100167AA4 /* OneSignalLocation */,
 			);
 			productName = SweetChristamsPenguin;
 			productReference = F4ADBCC32CF66F86002C197D /* SweetChristamsPenguin.app */;
@@ -93,6 +185,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					F49DF2D22D09C2A900167AA4 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					F4ADBCC22CF66F86002C197D = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -107,17 +202,29 @@
 			);
 			mainGroup = F4ADBCBA2CF66F86002C197D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F49DF2C32D09BB3300167AA4 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				F49DF2C62D09BB7100167AA4 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F4ADBCC42CF66F86002C197D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F4ADBCC22CF66F86002C197D /* SweetChristamsPenguin */,
+				F49DF2D22D09C2A900167AA4 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F49DF2D12D09C2A900167AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4ADBCC12CF66F86002C197D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +235,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F49DF2CF2D09C2A900167AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4ADBCBF2CF66F86002C197D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +251,72 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F49DF2D92D09C2A900167AA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49DF2D22D09C2A900167AA4 /* OneSignalNotificationServiceExtension */;
+			targetProxy = F49DF2D82D09C2A900167AA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F49DF2DC2D09C2A900167AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bunle.sosir.spfe.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F49DF2DD2D09C2A900167AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bunle.sosir.spfe.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F4ADBCD02CF66F89002C197D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -261,9 +440,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SweetChristamsPenguin/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SweetChristamsPenguin/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this data to improve the user experience, provide personalized content, and analyze app performance for better optimization. By accepting, you agree to allow us to use this data for these purposes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -278,7 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = bunle.sosir.spfe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -300,9 +481,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SweetChristamsPenguin/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SweetChristamsPenguin/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this data to improve the user experience, provide personalized content, and analyze app performance for better optimization. By accepting, you agree to allow us to use this data for these purposes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,7 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = bunle.sosir.spfe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -333,6 +516,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F49DF2DB2D09C2A900167AA4 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49DF2DC2D09C2A900167AA4 /* Debug */,
+				F49DF2DD2D09C2A900167AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4ADBCBE2CF66F86002C197D /* Build configuration list for PBXProject "SweetChristamsPenguin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -352,6 +544,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F49DF2C32D09BB3300167AA4 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.15.3;
+			};
+		};
+		F49DF2C62D09BB7100167AA4 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F49DF2C42D09BB3300167AA4 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49DF2C32D09BB3300167AA4 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		F49DF2C72D09BB7100167AA4 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49DF2C62D09BB7100167AA4 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		F49DF2C92D09BB7100167AA4 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49DF2C62D09BB7100167AA4 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		F49DF2CB2D09BB7100167AA4 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49DF2C62D09BB7100167AA4 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
+		};
+		F49DF2CD2D09BB7100167AA4 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49DF2C62D09BB7100167AA4 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalLocation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4ADBCBB2CF66F86002C197D /* Project object */;
 }

@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
-
+import OneSignalFramework
+import AdSupport
+import AppTrackingTransparency
+import AppsFlyerLib
 
 struct GameMainPenguinView: View {
     @State var startAnimation: Bool = false
@@ -387,6 +390,44 @@ struct SwipeToDismissModifier: ViewModifier {
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        OneSignal.initialize("72cc0f60-36b2-43f6-99c6-85c44bcc37df", withLaunchOptions: launchOptions)
+        
+        self.apsStart()
+        
+        return true
+    }
+    private func apsStart() {
+        AppsFlyerLib.shared().start()
+        guard #available(iOS 14, *) else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                 
+                    DispatchQueue.main.async {
+                        
+                        self.oneSignalPopUp()
+                    }
+                    
+                    
+                case .denied, .restricted:
+                    DispatchQueue.main.async {
+                        
+                        self.oneSignalPopUp()
+                    }
+                    
+                    print("Restrict")
+                case .notDetermined:
+                    
+                    self.oneSignalPopUp()
+                    print("not determined")
+                @unknown default:
+                    break
+                }
+            }
+        }
+    }
     static var eroskei = UIInterfaceOrientationMask.landscape {
         didSet {
             if #available(iOS 16.0, *) {
@@ -408,5 +449,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         return AppDelegate.eroskei
+    }
+    func oneSignalPopUp() {
+        if !UserDefaults.standard.bool(forKey: "userAgreedOnesignalPermision") {
+            OneSignal.Notifications.requestPermission({ accepted in
+                
+                UserDefaults.standard.set(true, forKey: "userAgreedOnesignalPermision")
+            }, fallbackToSettings: true)
+        }
     }
 }
